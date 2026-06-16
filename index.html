@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=yes,email=yes,address=no" />
+    <meta name="theme-color" content="#071b3a" />
+    <title>陈锐锋 - 个人电子名片</title>
+    <meta
+      name="description"
+      content="陈锐锋，高勤科技部门总监/数字化解决方案顾问，个人电子名片。"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main class="card-page">
+      <section class="profile-panel" aria-label="个人电子名片">
+        <div class="profile-hero">
+          <div class="avatar-wrap">
+            <img id="avatar" class="avatar" src="assets/img/avatar.png" alt="陈锐锋头像" />
+          </div>
+          <div class="identity">
+            <p class="eyebrow">Digital Business Card</p>
+            <h1 id="personName">陈锐锋</h1>
+            <p class="role-line">
+              <span id="personTitle">部门总监/ 数字化解决方案顾问</span>
+            </p>
+            <p id="personCompany" class="company">高勤科技</p>
+          </div>
+        </div>
+
+        <div class="quick-actions" aria-label="快捷操作">
+          <a class="action primary" href="contact.vcf" download="陈锐锋.vcf">
+            <span class="action-icon" aria-hidden="true">↓</span>
+            保存到通讯录
+          </a>
+          <a id="callLink" class="action" href="tel:15920159212">
+            <span class="action-icon" aria-hidden="true">☎</span>
+            拨打电话
+          </a>
+          <button id="copyWechatBtn" class="action" type="button">
+            <span class="action-icon" aria-hidden="true">⧉</span>
+            复制微信号
+          </button>
+          <a id="mailLink" class="action" href="mailto:agoo.chen@gzgi.com">
+            <span class="action-icon" aria-hidden="true">✉</span>
+            发送邮件
+          </a>
+          <button id="qrBtn" class="action" type="button">
+            <span class="action-icon" aria-hidden="true">▣</span>
+            微信二维码
+          </button>
+        </div>
+
+        <section class="info-grid" aria-label="联系方式">
+          <div class="info-item">
+            <span class="label">手机</span>
+            <a id="phoneText" href="tel:15920159212">15920159212</a>
+          </div>
+          <div class="info-item">
+            <span class="label">微信</span>
+            <span id="wechatText">agoo20</span>
+          </div>
+          <div class="info-item">
+            <span class="label">邮箱</span>
+            <a id="emailText" href="mailto:agoo.chen@gzgi.com">agoo.chen@gzgi.com</a>
+          </div>
+          <div class="info-item">
+            <span class="label">城市</span>
+            <span id="cityText">广州</span>
+          </div>
+        </section>
+
+        <section class="content-section" aria-label="个人简介">
+          <h2>个人简介</h2>
+          <p id="bioText">
+            长期从事软件项目管理、系统实施、业务需求分析与解决方案设计工作，熟悉企业数字化系统建设、项目交付管理和客户需求沟通。近年来重点关注
+            AI 工具在软件研发、投标方案、需求分析、项目管理和效率提升中的应用，希望通过 AI
+            与行业经验结合，提升个人和团队的数字化服务能力。
+          </p>
+        </section>
+
+        <section class="content-section" aria-label="兴趣爱好">
+          <h2>兴趣爱好</h2>
+          <div id="hobbiesList" class="pill-list"></div>
+        </section>
+
+        <section class="content-section" aria-label="个人标签">
+          <h2>个人标签</h2>
+          <div id="tagsList" class="tag-list"></div>
+        </section>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <div id="qrModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+        <button class="modal-close" type="button" aria-label="关闭" data-close-modal>×</button>
+        <h2 id="qrTitle">微信二维码</h2>
+        <img class="wechat-qr" src="assets/img/wechat-qr.png" alt="微信二维码" />
+        <p>长按图片识别或保存二维码后添加微信。</p>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

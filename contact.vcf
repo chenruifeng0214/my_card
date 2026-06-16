@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=UTF-8:陈;锐锋;;;
+FN;CHARSET=UTF-8:陈锐锋
+ORG;CHARSET=UTF-8:高勤科技
+TITLE;CHARSET=UTF-8:部门总监/ 数字化解决方案顾问
+TEL;TYPE=CELL,VOICE:15920159212
+EMAIL;TYPE=INTERNET,PREF:agoo.chen@gzgi.com
+ADR;TYPE=WORK;CHARSET=UTF-8:;;;;广州;;中国
+NOTE;CHARSET=UTF-8:微信号：agoo20；长期从事软件项目管理、系统实施、业务需求分析与解决方案设计工作，熟悉企业数字化系统建设、项目交付管理和客户需求沟通。
+END:VCARD
