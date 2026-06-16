@@ -48,7 +48,7 @@ button {
 .card-page {
   width: 100%;
   min-height: 100vh;
-  padding: max(20px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+  padding: max(12px, env(safe-area-inset-top)) 12px max(14px, env(safe-area-inset-bottom));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,7 +66,7 @@ button {
 
 .profile-hero {
   position: relative;
-  padding: 28px 22px 24px;
+  padding: 20px 18px 18px;
   display: flex;
   gap: 18px;
   align-items: center;
@@ -85,8 +85,8 @@ button {
 }
 
 .avatar-wrap {
-  width: 96px;
-  height: 96px;
+  width: 84px;
+  height: 84px;
   flex: 0 0 auto;
   padding: 4px;
   border: 1px solid rgba(255, 255, 255, 0.56);
@@ -107,7 +107,7 @@ button {
 }
 
 .eyebrow {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: rgba(255, 255, 255, 0.74);
   font-size: 12px;
   letter-spacing: 0;
@@ -116,16 +116,16 @@ button {
 
 .identity h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.12;
   font-weight: 760;
 }
 
 .role-line,
 .company {
-  margin: 8px 0 0;
+  margin: 6px 0 0;
   color: rgba(255, 255, 255, 0.88);
-  line-height: 1.45;
+  line-height: 1.35;
 }
 
 .role-line {
@@ -137,17 +137,17 @@ button {
 }
 
 .quick-actions {
-  padding: 18px;
+  padding: 12px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 8px;
   background: #f6f9fd;
   border-bottom: 1px solid var(--line);
 }
 
 .action {
-  min-height: 44px;
-  padding: 10px 12px;
+  min-height: 40px;
+  padding: 8px 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -181,15 +181,19 @@ button {
 }
 
 .info-grid {
-  padding: 18px;
+  padding: 12px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: 8px;
 }
 
 .info-item {
   min-width: 0;
-  padding: 12px;
+  padding: 9px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel-muted);
@@ -197,7 +201,8 @@ button {
 
 .label {
   display: block;
-  margin-bottom: 6px;
+  flex: 0 0 auto;
+  margin-bottom: 0;
   color: var(--muted);
   font-size: 12px;
 }
@@ -205,17 +210,21 @@ button {
 .info-item a,
 .info-item span:last-child {
   display: block;
-  overflow-wrap: anywhere;
-  font-size: 15px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  font-size: 13px;
   font-weight: 650;
 }
 
 .content-section {
-  padding: 0 18px 18px;
+  padding: 0 12px 12px;
 }
 
 .content-section h2 {
-  margin: 0 0 10px;
+  margin: 0 0 6px;
   color: #18345b;
   font-size: 16px;
 }
@@ -223,23 +232,23 @@ button {
 .content-section p {
   margin: 0;
   color: #34445a;
-  font-size: 14px;
-  line-height: 1.78;
+  font-size: 13px;
+  line-height: 1.58;
 }
 
 .pill-list,
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .pill,
 .tag {
   max-width: 100%;
-  padding: 7px 10px;
+  padding: 6px 9px;
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.35;
 }
 
